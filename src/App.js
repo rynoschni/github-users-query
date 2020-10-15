@@ -1,5 +1,6 @@
 import React from 'react';
-import 'bulma/css/bulma.css'
+import { BrowserRouter as Router } from 'react-router-dom';
+import 'bulma/css/bulma.css';
 import { Container } from 'bloomer';
 
 import SearchForm from './components/SearchForm';
@@ -10,9 +11,10 @@ function App() {
 
   return (
     <div className="App">
+      <Router>
       <Container />
-        <h1>GitHub User lookup!</h1>
         <SearchForm />
+      </Router>
     </div>
   );
 }

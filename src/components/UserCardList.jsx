@@ -6,7 +6,7 @@ const UserCardList = props => {
     return(
         <>
             {users.map(user =>(
-                <UserCard {...user} />
+            <UserCard user={user} key={user.id}/>
             )
             )}
         </>
